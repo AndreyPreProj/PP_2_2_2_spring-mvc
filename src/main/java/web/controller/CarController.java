@@ -13,7 +13,7 @@ import java.util.stream.Collectors;
 @Controller
 public class CarController {
     @Autowired
-    CarService carService = new CarServiceImpl();
+    CarService carService;
 
     @GetMapping(value = "/cars")
     public String getCars(Model model) {
